@@ -1,0 +1,98 @@
+.playing {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5rem;
+}
+
+.playing__bar {
+  display: block;
+  flex-basis: 2px;
+  flex-shrink: 0;
+  background-color: white;
+
+  height: 0%;
+  animation: up-and-down 1.1s ease infinite alternate;
+}
+
+.muted {
+  height: 10%;
+  background-color: yellow;
+  animation: close-muted 0.5s linear alternate;
+}
+.playing__bar1 {
+  height: 10%;
+  animation-delay: -1.1s;
+}
+
+.playing__bar2 {
+  height: 10%;
+  animation-delay: -2.2s;
+}
+
+.playing__bar3 {
+  height: 10%;
+  animation-delay: -3.7s;
+}
+.playing__bar4 {
+  height: 10%;
+  animation-delay: -4.7s;
+}
+.playing__bar5 {
+  height: 10%;
+  animation-delay: -5s;
+}
+
+@keyframes up-and-down {
+  10% {
+    height: 30%;
+    background-color: red;
+  }
+
+  30% {
+    height: 100%;
+    background-color: yellow;
+  }
+
+  60% {
+    height: 50%;
+    background-color: red;
+  }
+
+  80% {
+    height: 75%;
+    background-color: red;
+  }
+
+  100% {
+    height: 60%;
+    background-color: red;
+  }
+}
+@keyframes close-muted {
+  0% {
+    height: 80%;
+    background-color: red;
+  }
+  50% {
+    height: 30%;
+    background-color: red;
+  }
+  100% {
+    height: 10%;
+    background-color: yellow;
+  }
+}
+
+body {
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+}
