@@ -11,7 +11,9 @@ import { Effects } from "./Effects";
 import Tree1 from "./Tree1.js";
 import Tree2 from "./Tree2.js";
 import Tree3 from "./Tree3.js";
+
 import { Lights } from "./Lights.js";
+import Ekmek from "./Ekmek.js";
 import "./App.css";
 extend({ UnrealBloomPass });
 
@@ -34,57 +36,50 @@ const MovingItem = (props) => {
   );
 };
 
-// export default function App() {
-//   return (
-//     <Canvas
-//       camera={{ position: [1.79, 1.81, 3] }}
-//       gl={{ powerPreference: "high-performance" }}
-//     >
-//       <color attach="background" args={["black"]} />
-//       <ambientLight intensity={0.5} />
-
-//       <OrbitControls />
-//       {[...Array(TREE_1)].map((_v, index) => (
-//         <MovingItem
-//           key={index}
-//           position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
-//         >
-//           <Tree1 />
-//         </MovingItem>
-//       ))}
-//       {[...Array(TREE_2)].map((_v, index) => (
-//         <MovingItem
-//           key={index}
-//           position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
-//         >
-//           <Tree2 />
-//         </MovingItem>
-//       ))}
-//       {[...Array(TREE_3)].map((_v, index) => (
-//         <MovingItem
-//           key={index}
-//           position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
-//         >
-//           <Tree3 />
-//         </MovingItem>
-//       ))}
-//       <Deer />
-//       <Lights />
-//       {/* <Shadow /> */}
-//       <Effects />
-//       {/*
-//       <Effects disableGamma>
-//         <unrealBloomPass threshold={1} strength={1.0} radius={0.5} />
-//       </Effects> */}
-//     </Canvas>
-//   );
-// }
-
 export default function App() {
   return (
-    <>
-      <Cursor />
-      <Audio />
-    </>
+    // <Canvas
+    //   camera={{ position: [1.79, 1.81, 3] }}
+    //   gl={{ powerPreference: "high-performance" }}
+    // >
+    //   <color attach="background" args={["black"]} />
+    //   <ambientLight intensity={0.5} />
+
+    //   <OrbitControls />
+    //   {[...Array(TREE_1)].map((_v, index) => (
+    //     <MovingItem
+    //       key={index}
+    //       position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
+    //     >
+    //       <Tree1 />
+    //     </MovingItem>
+    //   ))}
+    //   {[...Array(TREE_2)].map((_v, index) => (
+    //     <MovingItem
+    //       key={index}
+    //       position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
+    //     >
+    //       <Tree2 />
+    //     </MovingItem>
+    //   ))}
+    //   {[...Array(TREE_3)].map((_v, index) => (
+    //     <MovingItem
+    //       key={index}
+    //       position={[0, 0, -OFFSET_Z + (index / TREE_1) * OFFSET_Z * 5]}
+    //     >
+    //       <Tree3 />
+    //     </MovingItem>
+    //   ))}
+    //   <Deer />
+    //   <Lights />
+    //   {/* <Shadow /> */}
+    //   <Effects />
+    //   {/*
+    //   <Effects disableGamma>
+    //     <unrealBloomPass threshold={1} strength={1.0} radius={0.5} />
+    //   </Effects> */}
+    // </Canvas>
+    // <Q />
+    <Ekmek />
   );
 }
